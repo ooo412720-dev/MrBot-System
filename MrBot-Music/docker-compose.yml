@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  mrbot:
+    build: ./MrBot
+    container_name: mrbot_app
+    restart: unless-stopped
+    env_file:
+      - ./MrBot/.env
+    volumes:
+      - ./MrBot/data:/app/data
+      - ./MrBot/logs:/app/logs
+
+  mrbot-music:
+    build: ./MrBot-Music
+    container_name: mrbot_music
+    restart: unless-stopped
+    env_file:
+      - ./MrBot-Music/.env
+    volumes:
+      - ./MrBot-Music/downloads:/app/downloads

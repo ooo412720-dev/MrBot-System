@@ -1,0 +1,48 @@
+MrBot-System.zip
+├── MrBot/                    ← بوت الإدارة (Aiogram)
+│   ├── bot.py
+│   ├── app/
+│   │   ├── bot/
+│   │   │   ├── bot.py
+│   │   │   ├── dispatcher.py
+│   │   │   ├── register.py
+│   │   │   └── setup.py
+│   │   ├── handlers/
+│   │   │   ├── owner.py
+│   │   │   ├── commands.py
+│   │   │   ├── admin.py
+│   │   │   ├── group.py
+│   │   │   ├── welcome.py
+│   │   │   ├── protection.py
+│   │   │   ├── notes.py
+│   │   │   ├── points.py
+│   │   │   ├── settings.py
+│   │   │   ├── whispers.py
+│   │   │   ├── messages.py
+│   │   │   ├── start.py
+│   │   │   ├── group_commands.py
+│   │   │   ├── arabic_commands.py
+│   │   │   └── text_messages.py
+│   │   ├── database/
+│   │   │   ├── __init__.py
+│   │   │   ├── base.py
+│   │   │   ├── session.py
+│   │   │   ├── models.py
+│   │   │   └── db.py
+│   │   ├── core/
+│   │   │   ├── __init__.py
+│   │   │   ├── config.py
+│   │   │   ├── logger.py
+│   │   │   └── security.py
+│   │   └── services/
+│   │       └── scheduler.py
+│   ├── requirements.txt
+│   ├── .env.example
+│   └── Dockerfile
+│
+└── MrBot-Music/              ← بوت الموسيقى (Pyrogram)
+    ├── music_bot.py
+    ├── config.py
+    ├── requirements.txt
+    ├── .env.example
+    └── Dockerfile
